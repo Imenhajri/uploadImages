@@ -1,9 +1,10 @@
 import React from "react";
+import ImagesData from "../datas";
 
-function GetDataComponent({ result }) {
+function GetDataComponent() {
   return (
     <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 container mx-auto gap-10 my-12">
-      {result.map((i, index) => (
+      {ImagesData.map((i, index) => (
         <div
           key={index}
           className="p-1 bg-white rounded flex-colo border border-blue-400"
